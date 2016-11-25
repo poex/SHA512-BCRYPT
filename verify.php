@@ -8,6 +8,6 @@ $sha512 = hash('SHA512', $password);
 
 $hash = '$2y$07$BCryptRequires22Chrcte/VlQH0piJtjXl.0t1XkA8pw9dMXTpOq'; // a hash from your database
 if (password_verify($sha512, $hash)) {
-	echo 'Password is correct';
+echo 'Password is correct';
 } else { echo 'Password is incorrect'; }
 ?>
